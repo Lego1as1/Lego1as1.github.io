@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function(){
   canvas.height = window.innerHeight;
   let particles = [];
   const count = 150;
-
   for (let i = 0; i < count; i++){
     particles.push({
       x: Math.random() * canvas.width,
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function(){
       color: `rgba(255,255,255,${Math.random()*0.5 + 0.3})`
     });
   }
-
   function animate(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     particles.forEach(p => {
@@ -32,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function(){
     requestAnimationFrame(animate);
   }
   animate();
-
   window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
