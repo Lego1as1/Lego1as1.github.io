@@ -3,18 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacts - Glukhov</title>
+  <title>Model - Glukhov</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="model.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .page-header { text-align: right; font-style: italic; margin: 20px; }
-    .contacts-container { text-align: center; margin-top: 50px; }
-    .contacts-container h2 { margin-bottom: 30px; }
-    .contacts-links a { margin: 0 15px; }
-  </style>
 </head>
 <body>
+  <canvas id="particleCanvas"></canvas>
   <header>
     <div class="header-container">
       <div class="header-left">
@@ -23,31 +19,24 @@
       <div class="header-center">
         <nav class="header-menu">
           <ul>
-            <li><a href="blog.html" target="_blank">Blog</a></li>
-            <li><a href="resume.html" target="_blank">Resume</a></li>
-            <li><a href="contacts.html" target="_blank">Contacts</a></li>
+            <li><a href="blog1.html">Blog</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="model.html">Model</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
-  
-  <div class="page-header"><em>contacts</em></div>
-  
   <main>
-    <div class="contacts-container">
-      <h2>Связь со мной</h2>
-      <div class="contacts-links">
-        <a href="https://github.com/Lego1as1" target="_blank">
-          <img src="assets/icons/github.svg" alt="GitHub" width="30" height="30">
-        </a>
-        <a href="https://t.me/Youth1710" target="_blank">
-          <img src="assets/icons/telegram.svg" alt="Telegram" width="30" height="30">
-        </a>
+    <div class="Model-container">
+      <h2>Модель сайта (<a href="https://pixso.net/app/editor/3-p05U08ErgPOzkRkNms7Q?showQuickFrame=true&icon_type=1&page-id=0%3A1" target="_blank">Pixso</a>)</h2>
+      <div class="model-gallery">
+        <img src="assets/images/model1.png" alt="Model Image 1" class="model-image">
+        <img src="assets/images/model2.png" alt="Model Image 2" class="model-image">
+        <img src="assets/images/model3.png" alt="Model Image 3" class="model-image">
       </div>
     </div>
   </main>
-  
   <footer>
     <div class="social-icons">
       <a href="https://github.com/Lego1as1" target="_blank" class="social-link">
@@ -58,5 +47,6 @@
       </a>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

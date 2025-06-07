@@ -1,0 +1,48 @@
+body {
+  overflow-y: auto !important;
+}
+
+main {
+  height: auto !important;
+  align-items: flex-start !important;
+}
+
+.Model-container {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.Model-container h2 {
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+.Model-container h2 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.2rem;
+  transition: color 0.3s;
+}
+
+.Model-container h2 a:hover {
+  color: #2400f0;
+}
+.model-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.model-image {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  transition: transform 1.3s ease;
+}
+
+.model-image:hover {
+  transform: scale(1.12);
+}

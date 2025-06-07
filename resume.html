@@ -7,13 +7,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .page-header { text-align: right; font-style: italic; margin: 20px; }
-    .resume-container { margin: 40px; }
-    .resume-text { font-size: 1.2rem; }
-  </style>
+  <link rel="stylesheet" href="resume.css">  
 </head>
 <body>
+  <canvas id="particleCanvas"></canvas>
   <header>
     <div class="header-container">
       <div class="header-left">
@@ -22,28 +19,25 @@
       <div class="header-center">
         <nav class="header-menu">
           <ul>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog1.html">Blog</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="Model.html">Model</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
-  <div class="page-header"><em>resume</em></div>
   <main>
     <div class="container resume-container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Мое резюме</h2>
-          <p class="resume-text">
-            Здесь вы найдете информацию обо мне, моем опыте и компетенциях в области веб-разработки.
-            Я специализируюсь на создании современных и адаптивных веб-сайтов с использованием передовых технологий.
-          </p>
-        </div>
-        <div class="col-md-6">
-          <img src="assets/images/resume-placeholder.jpg" alt="Resume Image" class="img-fluid">
-        </div>
+      <div class="resume-content">
+        <h2 class="resume-title">Мое резюме</h2>
+        <p class="resume-description">
+          Здесь вы найдете информацию обо мне, моем опыте и компетенциях в области веб-разработки.
+          Я специализируюсь на создании современных и адаптивных веб-сайтов с использованием передовых технологий.
+        </p>
+      </div>
+      <div class="resume-image-container">
+        <img src="assets/images/resume.jpg" alt="Resume Image" class="img-fluid resume-image">
       </div>
     </div>
   </main>
@@ -57,5 +51,6 @@
       </a>
     </div>
   </footer>
+  <script src="script.js"></script> 
 </body>
 </html>
