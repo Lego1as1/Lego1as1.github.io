@@ -1,49 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наш первый html</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glukhov</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<style>
-    button{
-        background-color: red;
-    }
-    
-    h1 {
-        color: blue;
-    }
-</style>
-
-<script>
-    console.log('hello world!')
-</script>
-
-    <button>Кнопка</button>
-    
-    <br>
-    <br>
-    <br>
-
-    <div style="display: inline;">
-        Блочный
+  <canvas id="particleCanvas"></canvas>
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <a href="#" class="site-title">Glukhov</a>
+      </div>
+      <div class="header-center">
+        <nav class="header-menu">
+          <ul>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <span>
-        Строчный
-    </span>
-    <p>
-        Text
-    </p>
+  </header>
+  <main>
+    <div class="main-content">
+      <div class="about-info">
+        <h1>Глухов Павел</h1>
+        <p>Добро пожаловать на мой сайт-визитку. Здесь представлена основная информация обо мне, мои проекты и достижения.</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="social-icons">
+        <a href="https://github.com/Lego1as1" target="_blank" class="social-link">
+            <img src="assets/icons/github.svg" alt="GitHub" width="30" height="30">
+        </a>
 
-    <h1 class="group1" id="header" style="color: red;"> Hello world</hi>
-    <h1 class="group1" id="header1" style=""> Hello world</hi>
-    <h1 class="group2" id="header2" style=""> Hello world</hi>
+        <a href="https://t.me/Youth1710" target="_blank" class="social-link">
+            <img src="assets/icons/telegram.svg" alt="Telegram" width="30" height="30">
+        </a>
 
-    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Zunge_raus.JPG/1200px-Zunge_raus.JPG">link</a>
-     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Zunge_raus.JPG/1200px-Zunge_raus.JPG" alt="" />
 
-    
-
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
